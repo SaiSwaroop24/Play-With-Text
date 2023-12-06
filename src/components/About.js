@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
-
+//import React, { useState } from 'react';
+/*
 export default function About(props) {
   const [theme, setTheme] = useState({
     color: 'black',
     backgroundColor: 'white',
   });
-  
+  setTheme({
+    color: 'black',
+    backgroundColor: 'white',
+  });
 
   return (
     <div className='container my-4'>
@@ -69,3 +72,4 @@ export default function About(props) {
     </div>
   );
 }
+*/

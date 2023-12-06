@@ -3,8 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Textbox from './components/Textbox';
 import Alert from './components/Alert';
-import About from './components/About';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import About from './components/About';
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [mymode, setmymode] = useState('light');
@@ -72,14 +72,20 @@ function App() {
   };
 
   return (
-    <Router>
+    <>
+      <Navbar mymode={mymode} themetext1={themetext1} themetext2={themetext2} themetext3={themetext3} change={change} change1={change1} change2={change2} />
+      <Alert alert={alert} />
+      <Textbox mymode={mymode} showalert={showalert} colors={colors} />
+    </>
+   /* <Router>
       <Navbar mymode={mymode} themetext1={themetext1} themetext2={themetext2} themetext3={themetext3} change={change} change1={change1} change2={change2} />
       <Alert alert={alert} />
         <Routes>
           <Route path="/about" element={<About mode={mymode} />} />
           <Route path="/" element={<Textbox mymode={mymode} showalert={showalert} colors={colors} />} />
         </Routes>
-      </Router>
+  </Router>*/
+      
   );
 }
 
