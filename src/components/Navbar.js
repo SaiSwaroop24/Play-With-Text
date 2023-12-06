@@ -1,8 +1,6 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';;
 export default function Navbar(props){
-
-  
     return(
       <>
         <nav className={`navbar navbar-expand-lg -${props.mymode} bg-${props.mymode}`}> {/* use ` ` insed of " " and ' ' .add { } for writing jvascript*/}
